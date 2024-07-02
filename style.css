@@ -1,0 +1,61 @@
+body {
+  background: rgb(130, 160, 193);
+  background: linear-gradient(
+    153deg,
+    rgba(130, 160, 193, 1) 36%,
+    rgba(152, 223, 222, 1) 57%,
+    rgba(90, 168, 184, 1) 78%
+  );
+  text-align: center;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px inset rgb(219, 243, 250);
+  padding: 3%;
+  box-shadow: 1px 1px 2px 2px rgb(130, 160, 193);
+}
+.container:hover {
+  background-color: rgb(104, 141, 180);
+  box-shadow: 1px 1px 5px 5px rgb(202, 228, 255);
+}
+h1 {
+  font-weight: bold;
+}
+form .input div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2% 0;
+}
+form .input div input {
+  max-width: fit-content;
+}
+button {
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 2% 0;
+  margin-top: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button[type="submit"] {
+  background-color: rgb(72, 173, 62);
+}
+button[type="submit"]:hover {
+  background-color: rgb(102, 214, 102);
+}
+button[type="reset"] {
+  background-color: rgb(253, 40, 40);
+}
+button[type="reset"]:hover {
+  background-color: rgb(252, 102, 102);
+}
+.result,
+#computerNum {
+  display: none;
+}
